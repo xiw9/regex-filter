@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/main_scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/main_linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/main_imageView1"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/folder_options" />
+
+                <TextView
+                    android:id="@+id/main_textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.70"
+                    android:text="Spambox"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_linearlayout2"                
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/main_imageView2"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/text_document" />
+
+                <TextView
+                    android:id="@+id/main_textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.70"
+                    android:text="Regex Filter"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+            </LinearLayout>            
+            
+            <LinearLayout
+                android:id="@+id/main_linearlayout4"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/main_imageView4"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/configuration_settings" />
+
+                <TextView
+                    android:id="@+id/main_textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.70"
+                    android:text="Settings"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>            
+            
+            <LinearLayout
+                android:id="@+id/main_linearlayout5"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/main_imageView5"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/help_and_support" />
+
+                <TextView
+                    android:id="@+id/main_textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.70"
+                    android:text="About Me"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>         
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Settings">
+        <CheckBoxPreference
+            android:key="Preferences_CheckBox1"
+            android:title="Enable regex filter"
+            android:summaryOn="We won't do anything for the people in your contact."
+            android:summaryOff=""
+            android:defaultValue="false"
+        />
+    </PreferenceCategory>
+
+</PreferenceScreen>
