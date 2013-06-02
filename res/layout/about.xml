@@ -46,7 +46,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
         android:layout_weight="1.20"
-        android:text="A very simple SMS filter based on regular expressions.\n\nWorking Flow:\n-> Receive a SMS \n-> If the sender doesn't exsit in your contacts \n-> If the message match the regex filters\n-> Send it to Spambox\n\nReleased under WTFPL. You can checkout the source code at https://github.com/wandsea/regex-filter/.\n\nIcon designed by Harwen (http://harwen.net/).\n\nIf there are any questions or bugs about this application, please feel free to contact wandsea@gmail.com." />
+        android:text="A very simple SMS filter based on regular expressions.\n\nWorking Flow:\n-> Receive a SMS \n-> If the sender doesn't exist in your contacts \n-> If the message match the regex filters\n-> Send it to Spambox\n\nReleased under WTFPL. You can checkout the source code at https://github.com/wandsea/regex-filter/.\n\nIcon designed by Harwen (http://harwen.net/).\n\nIf there are any questions or bugs about this application, please feel free to contact wandsea@gmail.com." />
 
     <LinearLayout
         android:layout_width="wrap_content"

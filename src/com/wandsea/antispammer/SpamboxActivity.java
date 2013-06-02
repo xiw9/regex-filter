@@ -8,7 +8,9 @@ import com.wandsea.antispammer.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemLongClickListener;
@@ -25,6 +27,7 @@ public class SpamboxActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.spambox);
+
         
         list = (ListView) findViewById(R.id.spambox_listView1); 
         listItem = new ArrayList<HashMap<String, Object>>();

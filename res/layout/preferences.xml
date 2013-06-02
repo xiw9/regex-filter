@@ -5,8 +5,15 @@
         <CheckBoxPreference
             android:key="Preferences_CheckBox1"
             android:title="Enable regex filter"
-            android:summaryOn="We won't do anything for the people in your contact."
-            android:summaryOff=""
+            android:summaryOn="I'm protecting your inbox."
+            android:summaryOff="Press to enable."
+            android:defaultValue="true"
+        />
+        <CheckBoxPreference
+            android:key="Preferences_CheckBox2"
+            android:title="Clear the spambox"
+            android:summaryOn="Won't move any message into it."
+            android:summaryOff="Press to clear the spambox"
             android:defaultValue="false"
         />
     </PreferenceCategory>

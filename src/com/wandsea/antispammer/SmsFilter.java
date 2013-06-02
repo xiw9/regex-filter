@@ -36,7 +36,7 @@ public class SmsFilter{
 	
 	public static boolean isspam(Context c,String phonenum,String text){
 		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(c);
-		boolean Preferences_CheckBox1 = prefs.getBoolean("Preferences_CheckBox1", false);
+		boolean Preferences_CheckBox1 = prefs.getBoolean("Preferences_CheckBox1", true);
 		
 		if(!Preferences_CheckBox1)
 			return false;
@@ -51,6 +51,12 @@ public class SmsFilter{
 	public static void logspam(Context c,String phonenum,String text){
 	    SmsDatabase sqlHelper;  
 	    SQLiteDatabase db;  
+	    
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(c);
+		boolean Preferences_CheckBox2 = prefs.getBoolean("Preferences_CheckBox2", false);
+	    if(Preferences_CheckBox2)
+	    	return;
+	    
 	    sqlHelper = new SmsDatabase(c, "antispammer.db", null, 1);  
 	    db = sqlHelper.getWritableDatabase();
 	    
@@ -89,6 +95,15 @@ public class SmsFilter{
 	    sqlHelper = new SmsDatabase(c, "antispammer.db", null, 1);  
 	    db = sqlHelper.getWritableDatabase();     
       	db.delete("SpamSMS", "ID=?", new String[]{String.valueOf(id)});
+        db.close();
+	}
+	
+	public static void deleteallspam(Context c){
+	    SmsDatabase sqlHelper;  
+	    SQLiteDatabase db;  
+	    sqlHelper = new SmsDatabase(c, "antispammer.db", null, 1);  
+	    db = sqlHelper.getWritableDatabase();     
+      	db.delete("SpamSMS", "ID!=?", new String[]{String.valueOf(0)});
         db.close();
 	}
 	
